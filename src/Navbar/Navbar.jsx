@@ -8,7 +8,7 @@ import {
   Text,
   HStack,
 } from "@chakra-ui/react";
-import { Flex, Spacer } from "@chakra-ui/react";
+import { Flex} from "@chakra-ui/react";
 import {
   HamburgerIcon,
   AddIcon,
@@ -20,16 +20,26 @@ import { Link } from "react-scroll";
 
 export default function Navbar() {
   return (
-    <Box p="4" w="100%">
+    <Box
+      w="100%"
+      // bg="#0f4c5c"
+      background="linear-gradient(to bottom, rgba(41,50,65,1) 0%, rgba(41,50,65,1) 35%, rgba(15,77,92,1) 68%, rgba(15,77,92,1) 100%)"
+      position="sticky"
+      top="0"
+      zIndex="5"
+      borderBottom="1px solid #e0fbfc"
+      // border="1px solid red"
+    >
       <Flex justifyContent={"space-between"}>
         <Box
           w={{ lg: "30%", md: "40%", sm: "40%", base: "50%" }}
-          color="#E7E8D1"
-          // border="1px solid red"
+          // color="#f6bd60"
+          color="#e0fbfc"
         >
           <Text
-            fontSize={{ lg: "60", md: "50", sm: "35", base: "30" }}
-            fontFamily="Tangerine"
+            fontSize={{ lg: "50", md: "50", sm: "35", base: "30" }}
+            // fontFamily="Tangerine"
+            fontFamily="Courgette"
           >
             Akshay Ingle
           </Text>
@@ -38,8 +48,9 @@ export default function Navbar() {
           justifyContent={"space-evenly"}
           w="60%"
           display={{ base: "none", sm: "none", md: "flex", lg: "flex" }}
-          color="#E7E8D1"
-          fontFamily="Courgette"
+          // color="#f6bd60"
+          color="#e0fbfc"
+          // fontFamily="Courgette"
           fontSize="20"
         >
           <Text>
@@ -87,7 +98,7 @@ export default function Navbar() {
             icon={<HamburgerIcon />}
             variant="outline"
           />
-          <MenuList>
+          <MenuList background="linear-gradient(to bottom, rgba(41,50,65,1) 0%, rgba(41,50,65,1) 35%, rgba(15,77,92,1) 68%, rgba(15,77,92,1) 100%)" color="">
             <MenuItem icon={<AddIcon />}>Home</MenuItem>
             <Link to="about" spy={true} smooth={true}>
               <MenuItem icon={<ExternalLinkIcon />} command="⌘N">

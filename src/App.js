@@ -6,6 +6,7 @@ import AllContent from "./MainContent/AllContent";
 function App() {
   return (
     <div className="App">
+      <Navbar/>
       <AllContent />
     </div>
   );

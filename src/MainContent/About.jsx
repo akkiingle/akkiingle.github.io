@@ -4,31 +4,40 @@ import React from "react";
 const About = () => {
   return (
     <Grid
-      templateColumns={{ lg: "40% 40%", md: "100%" }}
-      w="80%"
+      templateColumns={{ lg: "50% 30%", md: "90%",sm:"90%",base:"90%" }}
       margin="auto"
-      mt="90px"
-      columnGap="20%"
-      // h="99vh"
+      columnGap="10%"
+      h={{ base: "" }}
+      bg="linear-gradient(135deg, rgba(15,77,92,1) 0%, rgba(15,77,92,1) 32%, rgba(41,50,65,1) 65%, rgba(41,50,65,1) 100%)"
+      id="about"
+      justifyContent="center"
+      paddingTop="122px"
     >
-      <Box id="about" color="#E7E8D1" bg="#2B3856" textAlign="left">
-        <Text fontSize="70" fontFamily="ComforterBrush" fontWeight="600">Who I am</Text>
+      <Box color="#e0fbfc" textAlign="left">
+        <Text
+          fontSize={{ base: "40px", md: "50px", lg: "70px" }}
+          fontFamily="ComforterBrush"
+          fontWeight="600"
+          color="#f6bd60"
+        >
+          Who I am
+        </Text>
         <Text
           textAlign="justify"
-          // w="50%"
           margin="auto"
           fontFamily="Roboto Flex"
-          fontSize="20px"
-          lineHeight="40px"
+          fontSize={{ base: "16px", sm: "18px", md: "20px", lg: "25px" }}
+          lineHeight={{ base: "25px", md: "30px", lg: "40px" }}
         >
-          My name's Akshay. I'm a full-stack web-developer. I am a B.Tech graduate in Mechanical. I love exploring new
-          technologies in the field of Web Development and always try to adapt
-          to it.I believe in the concept of continuous learning by regularly
-          upgrading my skills and enhancing my knowledge.I have learned MERN
-          stack, data structures, algorithms, and soft skills at Masai
-          School. As a developer, my hunger for learning has drastically increased. And I
-          want to centralize my skills and learning for enhancement of an
-          organization and more of it, to enhance my career.
+          My name's Akshay. I'm a full-stack web-developer. I am a B.Tech
+          graduate in Mechanical. I love exploring new technologies in the field
+          of Web Development and always try to adapt to it.I believe in the
+          concept of continuous learning by regularly upgrading my skills and
+          enhancing my knowledge.I have learned MERN stack, data structures,
+          algorithms, and soft skills at Masai School. As a developer, my hunger
+          for learning has drastically increased. And I want to centralize my
+          skills and learning for enhancement of an organization and more of it,
+          to enhance my career.
         </Text>
       </Box>
       <Box>

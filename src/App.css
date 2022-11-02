@@ -1,6 +1,8 @@
 .App {
   text-align: center;
-  /* color: rgba(232, 175, 175, 0.173); */
+  color:"#2b2d42";
+  background-color: #edf2f4;
+  position:absolute
 }
 
 
