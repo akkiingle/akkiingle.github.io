@@ -1,3 +1,4 @@
+import { Box, Flex } from "@chakra-ui/react";
 import React from "react";
 import GitHubCalendar from "react-github-calendar";
 import ReactTooltip from "react-tooltip";
@@ -19,17 +20,19 @@ const Calender = () => {
     });
   };
   return (
-    <div>
+    
+      <Flex w="90%" justifyContent="center"  m="auto" mb="20px">
       <GitHubCalendar
         style={{ margin: "auto" }}
         username="akkiingle"
         transformData={selectLastHalfYear}
-        blockSize={20}
-        fontSize={20}
+        blockSize={14}
+        fontSize={16}
       >
          <ReactTooltip delayShow={20} html /> 
       </GitHubCalendar>
-    </div>
+      </Flex>
+    
   );
 };
 

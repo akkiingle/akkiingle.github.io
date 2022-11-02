@@ -6,6 +6,7 @@ import Contact from "./Contact";
 import React from "react";
 import { Box } from "@chakra-ui/react";
 import Github from "./Github";
+import Skills11 from "./Skills11"
 
 const style = {
   backgroundColor: "#2b2d42",
@@ -31,7 +32,7 @@ const AllContent = () => {
       {/* <Box style={style} ></Box> */}
       <About />
       {/* <Box style={style} ></Box> */}
-      <Skills />
+      <Skills11 />
       {/* <Box style={style} ></Box> */}
       <Project />
       {/* <Box style={style} ></Box> */}
