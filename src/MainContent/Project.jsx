@@ -1,4 +1,12 @@
-import { Box, Button, Grid, HStack, Image, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Button,
+  Divider,
+  Grid,
+  HStack,
+  Image,
+  Text,
+} from "@chakra-ui/react";
 import React from "react";
 import PharmEasy from "../Image/PharmEasy.png";
 import Zappos from "../Image/Zappos.png";
@@ -22,27 +30,64 @@ const Project = () => {
         Let's Talk About My Work
       </Text>
       <Grid justifyContent="center" alignItems="center" gap="40px" mt="30px">
-        <Box >
+        <Box>
           <Grid
-            templateColumns="repeat(2,1fr)"
+            templateColumns={{
+              base: "repeat(1,1fr)",
+              sm: "repeat(1,1fr)",
+              md: "repeat(1,1fr)",
+              lg: "repeat(2,1fr)",
+            }}
             gap="5%"
-            // border="5px dotted #f6bd60"
-            // p="5"
           >
-            <Image src={PharmEasy} borderRadius="10px" maxH="100%"></Image>
-            <Box >
-              <Text>About Project</Text>
-              <Text>TechStack</Text>
-              <Text></Text>
-
+            <Image src={PharmEasy} h="100%" borderRadius="10px"></Image>
+            <Grid
+              p="2% 2%"
+              border="1px solid "
+              borderRadius="10px"
+              justifyContent="space-between"
+            >
               <Text
-                // color="#2b2d42"
+                //  color="#2b2d42"
                 fontFamily="Roboto Flex"
                 fontSize="20px"
                 lineHeight="40px"
               >
                 PharmEasy.com
               </Text>
+              <Text
+                textAlign="justify"
+                fontSize={{ base: "11px", sm: "15px", md: "16px" }}
+                borderBottom="1px solid"
+                borderRadius="0 0 5px 5px"
+              >
+                PharmEasy is online pharmacy & medical stores offering
+                pharmaceutical and healthcare products
+              </Text>
+              {/* <Divider></Divider> */}
+              <Text
+                textAlign="left"
+                borderBottom="1px solid"
+                borderRadius="0 0 5px 5px"
+                fontSize={{ base: "11px", sm: "15px", md: "16px" }}
+              >
+                TechStack :- <span>HTML</span> | <span>CSS</span> |{" "}
+                <span>JavaScript</span>
+              </Text>
+              {/* <Divider></Divider> */}
+              <Text
+                textAlign="left"
+                m="auto"
+                borderBottom="1px solid"
+                borderRadius="0 0 5px 5px"
+                fontSize={{ base: "11px", sm: "15px", md: "16px" }}
+              >
+                Features :-
+                <li>Landing page</li>
+                <li>User authentication is required to buy the product</li>
+                <li> Filtering and sorting functionality</li>
+              </Text>
+              {/* <Divider></Divider> */}
               <HStack justifyContent="space-around" mt="10px">
                 <a
                   href="https://flourishing-salmiakki-eeb8bb.netlify.app/"
@@ -61,28 +106,59 @@ const Project = () => {
                   </Button>
                 </a>
               </HStack>
-            </Box>
+            </Grid>
           </Grid>
         </Box>
         <Box>
           <Grid
-            // border="5px dotted #f6bd60"
-            // p="5"
-            templateColumns="repeat(2,1fr)"
+            templateColumns={{
+              base: "repeat(1,1fr)",
+              sm: "repeat(1,1fr)",
+              md: "repeat(1,1fr)",
+              lg: "repeat(2,1fr)",
+            }}
             gap="5%"
           >
-            <Image src={Zappos} borderRadius="10px "></Image>
-            <Box >
-              <Text>About Project</Text>
-              <Text>TechStack</Text>
-              <Text></Text>
-              <Text
-                // color="#2b2d42"
-                fontFamily="Roboto Flex"
-                fontSize="20px"
-                lineHeight="40px"
-              >
+            <Image src={Zappos} h="100%" borderRadius="10px "></Image>
+            <Grid
+              p="2% 2%"
+              border="1px solid "
+              borderRadius="10px"
+              justifyContent="space-between"
+            >
+              <Text fontFamily="Roboto Flex" fontSize="20px" lineHeight="40px">
                 Zappos.com
+              </Text>
+              <Text
+                fontSize={{ base: "11px", sm: "15px", md: "16px" }}
+                borderBottom="1px solid"
+                borderRadius="0 0 5px 5px"
+              >
+                Zappos.com is an online shoe and clothing retailer based
+                ecommerce website.
+              </Text>
+              <Text
+                textAlign="left"
+                borderBottom="1px solid"
+                borderRadius="0 0 5px 5px"
+                fontSize={{ base: "11px", sm: "15px", md: "16px" }}
+              >
+                TechStack :- <span>HTML</span> | <span>CSS</span> |{" "}
+                <span>JavaScript</span> | <span>React</span> |{" "}
+                <span>Chakra UI</span>
+              </Text>
+              <Text
+                textAlign="left"
+                borderBottom="1px solid"
+                borderRadius="0 0 5px 5px"
+                m="auto"
+                fontSize={{ base: "11px", sm: "15px", md: "16px" }}
+              >
+                Features :-
+                <li>Landing page</li>
+                <li>Product page with filtering and sorting functionally</li>
+                <li>Authentication and integrated with the front end</li>
+                <li>All pages responsive</li>
               </Text>
               <HStack justifyContent="space-around" mt="10px">
                 <a href="https://zappos-omega.vercel.app/" target="blank">
@@ -99,7 +175,7 @@ const Project = () => {
                   </Button>
                 </a>
               </HStack>
-            </Box>
+            </Grid>
           </Grid>
         </Box>
         <Box
@@ -108,22 +184,59 @@ const Project = () => {
           <Grid
             //  border="5px dotted #f6bd60"
             //  p="5"
-            templateColumns="repeat(2,1fr)"
+            templateColumns={{
+              base: "repeat(1,1fr)",
+              sm: "repeat(1,1fr)",
+              md: "repeat(1,1fr)",
+              lg: "repeat(2,1fr)",
+            }}
             gap="5%"
           >
-            <Image src={Semrush} borderRadius="10px "></Image>
-            <Box >
-              <Text>About Project</Text>
-              <Text>TechStack</Text>
-              <Text></Text>
-
+            <Image src={Semrush} borderRadius="10px" h="100%"></Image>
+            <Grid
+              p="2% 2%"
+              border="1px solid "
+              borderRadius="10px"
+              justifyContent="space-between"
+            >
               <Text
                 // color="#2b2d42"
                 fontFamily="Roboto Flex"
                 fontSize="20px"
                 lineHeight="40px"
               >
-                Semrush.com
+                PharmEasy.com
+              </Text>
+              <Text
+                textAlign="justify"
+                fontSize={{ base: "11px", sm: "15px", md: "16px" }}
+                borderBottom="1px solid"
+                borderRadius="0 0 5px 5px"
+              >
+                Semrush is an all-in-one tool suite for improving online
+                visibility and discovering marketing insights.
+              </Text>
+              <Text
+                textAlign="left"
+                borderBottom="1px solid"
+                borderRadius="0 0 5px 5px"
+                fontSize={{ base: "11px", sm: "15px", md: "16px" }}
+              >
+                TechStack :- <span>HTML</span> | <span>CSS</span> |{" "}
+                <span>JavaScript</span>
+              </Text>
+              <Text
+                textAlign="left"
+                m="auto"
+                borderBottom="1px solid"
+                borderRadius="0 0 5px 5px"
+                fontSize={{ base: "11px", sm: "15px", md: "16px" }}
+              >
+                Features :-
+                <li>Login and Logout</li>
+                <li>Animation created by CSS</li>
+                <li>User authentication is required to explore plans</li>
+                <li>Checkout Page functionality</li>
               </Text>
               <HStack justifyContent="space-around" mt="10px">
                 <a href="https://semrush.netlify.app/">
@@ -137,73 +250,9 @@ const Project = () => {
                   </Button>
                 </a>
               </HStack>
-            </Box>
+            </Grid>
           </Grid>
         </Box>
-        {/* <Box 
-        // border="1px solid white"
-        >
-          <Image
-          h=""
-            src="https://schemazone.com/wp-content/uploads/2021/03/Project-Manager.jpg"
-            borderRadius="10px "
-          ></Image>
-          <Text
-            color="#E7E8D1"
-            fontFamily="Roboto Flex"
-            fontSize="20px"
-            lineHeight="40px"
-          >
-            DummyCard
-          </Text>
-          <HStack justifyContent="space-around" mt="10px">
-            <Button>Deploy</Button>
-
-            <Button>Github</Button>
-          </HStack>
-        </Box> */}
-        {/* <Box 
-        // border="1px solid white"
-        >
-          <Image
-            src="https://schemazone.com/wp-content/uploads/2021/03/Project-Manager.jpg"
-            borderRadius="10px "
-          ></Image>
-          <Text
-            color="#E7E8D1"
-            fontFamily="Roboto Flex"
-            fontSize="20px"
-            lineHeight="40px"
-          >
-            DummyCard
-          </Text>
-          <HStack justifyContent="space-around" mt="10px">
-            <Button>Deploy</Button>
-
-            <Button>Github</Button>
-          </HStack>
-        </Box> */}
-        {/* <Box 
-        // border="1px solid white"
-        >
-          <Image
-            src="https://schemazone.com/wp-content/uploads/2021/03/Project-Manager.jpg"
-            borderRadius="10px "
-          ></Image>
-          <Text
-            color="#E7E8D1"
-            fontFamily="Roboto Flex"
-            fontSize="20px"
-            lineHeight="40px"
-          >
-            DummyCard
-          </Text>
-          <HStack justifyContent="space-around" mt="10px">
-            <Button>Deploy</Button>
-
-            <Button>Github</Button>
-          </HStack>
-        </Box> */}
       </Grid>
     </Box>
   );

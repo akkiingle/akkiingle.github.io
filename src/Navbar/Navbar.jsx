@@ -8,7 +8,7 @@ import {
   Text,
   HStack,
 } from "@chakra-ui/react";
-import { Flex} from "@chakra-ui/react";
+import { Flex } from "@chakra-ui/react";
 import {
   HamburgerIcon,
   AddIcon,
@@ -37,8 +37,7 @@ export default function Navbar() {
           color="#e0fbfc"
         >
           <Text
-            fontSize={{ lg: "50", md: "50", sm: "35", base: "30" }}
-            // fontFamily="Tangerine"
+            fontSize={{ lg: "50", md: "50", sm: "35", base: "25" }}
             fontFamily="Courgette"
           >
             Akshay Ingle
@@ -48,9 +47,7 @@ export default function Navbar() {
           justifyContent={"space-evenly"}
           w="60%"
           display={{ base: "none", sm: "none", md: "flex", lg: "flex" }}
-          // color="#f6bd60"
           color="#e0fbfc"
-          // fontFamily="Courgette"
           fontSize="20"
         >
           <Text>
@@ -98,22 +95,33 @@ export default function Navbar() {
             icon={<HamburgerIcon />}
             variant="outline"
           />
-          <MenuList background="linear-gradient(to bottom, rgba(41,50,65,1) 0%, rgba(41,50,65,1) 35%, rgba(15,77,92,1) 68%, rgba(15,77,92,1) 100%)" color="">
-            <MenuItem icon={<AddIcon />}>Home</MenuItem>
+          <MenuList
+            background="linear-gradient(to bottom, rgba(41,50,65,1) 0%, rgba(41,50,65,1) 35%, rgba(15,77,92,1) 68%, rgba(15,77,92,1) 100%)"
+            color="#e0fbfc"
+          >
+            <Link to="home" spy={true} smooth={true}>
+              <MenuItem icon={<AddIcon />}>Home</MenuItem>
+            </Link>
             <Link to="about" spy={true} smooth={true}>
               <MenuItem icon={<ExternalLinkIcon />} command="⌘N">
                 About
               </MenuItem>
             </Link>
-            <MenuItem icon={<RepeatIcon />} command="⌘⇧N">
-              Skills
-            </MenuItem>
-            <MenuItem icon={<EditIcon />} command="⌘O">
-              Project
-            </MenuItem>
-            <MenuItem icon={<EditIcon />} command="⌘O">
-              Contact
-            </MenuItem>
+            <Link to="skills" spy={true} smooth={true}>
+              <MenuItem icon={<RepeatIcon />} command="⌘⇧N">
+                Skills
+              </MenuItem>
+            </Link>
+            <Link to="project" spy={true} smooth={true}>
+              <MenuItem icon={<EditIcon />} command="⌘O">
+                Project
+              </MenuItem>
+            </Link>
+            <Link to="contact" spy={true} smooth={true}>
+              <MenuItem icon={<EditIcon />} command="⌘O">
+                Contact
+              </MenuItem>
+            </Link>
             <MenuItem icon={<EditIcon />} command="⌘O">
               Resume
             </MenuItem>
