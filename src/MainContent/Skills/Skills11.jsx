@@ -12,7 +12,7 @@ const Skills11 = () => {
     "Redux",
     "ChakraUI",
   ];
-  const backend = ["MongoDB", "nodeJS", "Express", "AWS"];
+  const backend = ["MongoDB", "nodeJS", "Express"];
   const tools = ["Git", "Replit", "VSCode", "Postman"];
 
   const style = {
@@ -32,7 +32,7 @@ const Skills11 = () => {
     <Box
       id="skills"
       color="#e0fbfc"
-      p={{ base: "50px 5% 20px 5%", md: "80px 5% 20px 5%" }}
+      p={{ base: "50px 5% 20px 5%", md: "90px 5% 20px 5%" }}
       bg="linear-gradient(45deg, rgba(10,118,148,1) 0%, rgba(10,118,148,1) 34%, rgba(117,189,209,1) 68%, rgba(117,189,209,1) 100%)"
     >
       <Text
@@ -60,10 +60,13 @@ const Skills11 = () => {
           justifyContent="center"
         >
           {frontend.map((skill, id) => (
+            
             <Box
               style={style}
               key={id}
               p={{ base: "5px 0", sm: "10px 0", lg: "20px 0" }}
+              _hover={{ transform: "scale(1.15)" }}
+              
             >
               <Image
                 h={{ base: "25px", md: "30px", lg: "50px" }}
@@ -99,6 +102,7 @@ const Skills11 = () => {
               key={id}
               style={style}
               p={{ base: "5px 0", sm: "10px 0", lg: "20px 0" }}
+              _hover={{ transform: "scale(1.15)" }}
             >
               <Image
                 h={{ base: "25px", md: "30px", lg: "50px" }}
@@ -106,6 +110,7 @@ const Skills11 = () => {
                 src={skillsImage(skill)}
                 alt={skill}
                 margin="auto"
+                mb="5px"
               />
               <Text fontSize={{ base: "11px", lg: "16px" }}>{skill}</Text>
             </Box>
@@ -133,6 +138,7 @@ const Skills11 = () => {
               key={id}
               style={style}
               p={{ base: "5px 0", sm: "10px 0", lg: "20px 0" }}
+              _hover={{ transform: "scale(1.15)" }}
             >
               <Image
                 h={{ base: "25px", md: "30px", lg: "50px" }}
@@ -140,6 +146,7 @@ const Skills11 = () => {
                 src={skillsImage(skill)}
                 alt={skill}
                 margin="auto"
+                mb="5px"
               />
               <Text fontSize={{ base: "11px", lg: "16px" }}>{skill}</Text>
             </Box>

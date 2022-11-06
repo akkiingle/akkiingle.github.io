@@ -7,11 +7,12 @@ const About = () => {
       templateColumns={{ lg: "50% 30%", md: "90%",sm:"90%",base:"90%" }}
       margin="auto"
       columnGap="10%"
-      h={{ base: "" }}
+      h={{ base: "",lg:"99vh"}}
       bg="linear-gradient(135deg, rgba(15,77,92,1) 0%, rgba(15,77,92,1) 32%, rgba(41,50,65,1) 65%, rgba(41,50,65,1) 100%)"
       id="about"
       justifyContent="center"
-      paddingTop="122px"
+      p="90px 5% 70px 5%"
+      rowGap="20px"
     >
       <Box color="#e0fbfc" textAlign="left">
         <Text
@@ -20,13 +21,13 @@ const About = () => {
           fontWeight="600"
           color="#f6bd60"
         >
-          Who I am
+         About Me
         </Text>
         <Text
           textAlign="justify"
           margin="auto"
           fontFamily="Roboto Flex"
-          fontSize={{ base: "16px", sm: "18px", md: "20px", lg: "25px" }}
+          fontSize={{ base: "16px", sm: "18px", md: "20px", lg: "20px" }}
           lineHeight={{ base: "25px", md: "30px", lg: "40px" }}
         >
           My name's Akshay. I'm a full-stack web-developer. I am a B.Tech
@@ -41,7 +42,8 @@ const About = () => {
         </Text>
       </Box>
       <Box>
-        <Image src="https://abhishekdewanganportfolio.netlify.app/static/media/blueTheme-boy.b2f186cb.svg"></Image>
+        <Image src="https://abhishekdewanganportfolio.netlify.app/static/media/blueTheme-boy.b2f186cb.svg"
+          h={{base:"200px",md:"400px"}} margin="auto"></Image>
       </Box>
     </Grid>
   );

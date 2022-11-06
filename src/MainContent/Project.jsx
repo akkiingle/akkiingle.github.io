@@ -17,8 +17,9 @@ const Project = () => {
     <Box
       id="project"
       margin="auto"
-      p="122px 5% 70px 5%"
+      p="90px 5% 70px 5%"
       color="#e0fbfc"
+      // bg="linear-gradient(45deg, rgba(10,118,148,1) 0%, rgba(10,118,148,1) 34%, rgba(117,189,209,1) 68%, rgba(117,189,209,1) 100%)"
       bg="linear-gradient(135deg, rgba(15,77,92,1) 0%, rgba(15,77,92,1) 32%, rgba(41,50,65,1) 65%, rgba(41,50,65,1) 100%)"
     >
       <Text
@@ -41,11 +42,14 @@ const Project = () => {
             gap="5%"
           >
             <Image src={PharmEasy} h="100%" borderRadius="10px"></Image>
+            
             <Grid
               p="2% 2%"
               border="1px solid "
               borderRadius="10px"
               justifyContent="space-between"
+              // bg="linear-gradient(135deg, rgba(15,77,92,1) 0%, rgba(15,77,92,1) 32%, rgba(41,50,65,1) 65%, rgba(41,50,65,1) 100%)"
+              boxShadow=" 0px 10px 20px rgba(50, 500, 0, 0.12)"
             >
               <Text
                 //  color="#2b2d42"
@@ -93,17 +97,23 @@ const Project = () => {
                   href="https://flourishing-salmiakki-eeb8bb.netlify.app/"
                   target="blank"
                 >
-                  <Button bg="#2b2d42" color="#edf2f4">
+                  {/* <Button bg="#2b2d42" color="#edf2f4">
                     Deploy
-                  </Button>
+                  </Button> */}
+                  <button class="button-89" role="button">
+                    Deploy
+                  </button>
                 </a>
                 <a
                   href="https://github.com/akkiingle/probable-hour-5744"
                   target="blank"
                 >
-                  <Button bg="#2b2d42" color="#edf2f4">
+                  {/* <Button bg="#2b2d42" color="#edf2f4">
                     Github
-                  </Button>
+                  </Button> */}
+                  <button class="button-89" role="button">
+                    Github
+                  </button>
                 </a>
               </HStack>
             </Grid>
@@ -125,6 +135,7 @@ const Project = () => {
               border="1px solid "
               borderRadius="10px"
               justifyContent="space-between"
+              boxShadow=" 0px 10px 20px rgba(50, 500, 0, 0.12)"
             >
               <Text fontFamily="Roboto Flex" fontSize="20px" lineHeight="40px">
                 Zappos.com
@@ -162,17 +173,17 @@ const Project = () => {
               </Text>
               <HStack justifyContent="space-around" mt="10px">
                 <a href="https://zappos-omega.vercel.app/" target="blank">
-                  <Button bg="#2b2d42" color="#edf2f4">
+                <button class="button-89" role="button">
                     Deploy
-                  </Button>
+                  </button>
                 </a>
                 <a
                   href="https://github.com/akkiingle/exotic-minute-882"
                   target="blank"
                 >
-                  <Button bg="#2b2d42" color="#edf2f4">
+                   <button class="button-89" role="button">
                     Github
-                  </Button>
+                  </button>
                 </a>
               </HStack>
             </Grid>
@@ -198,6 +209,7 @@ const Project = () => {
               border="1px solid "
               borderRadius="10px"
               justifyContent="space-between"
+              boxShadow=" 0px 10px 20px rgba(50, 500, 0, 0.12)"
             >
               <Text
                 // color="#2b2d42"
@@ -240,14 +252,14 @@ const Project = () => {
               </Text>
               <HStack justifyContent="space-around" mt="10px">
                 <a href="https://semrush.netlify.app/">
-                  <Button bg="#2b2d42" color="#edf2f4">
+                <button class="button-89" role="button">
                     Deploy
-                  </Button>
+                  </button>
                 </a>
                 <a href="https://github.com/isky27/spicy-yak-7891">
-                  <Button bg="#2b2d42" color="#edf2f4">
+                <button class="button-89" role="button">
                     Github
-                  </Button>
+                  </button>
                 </a>
               </HStack>
             </Grid>
