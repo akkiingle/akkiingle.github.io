@@ -57,7 +57,7 @@ export default function Navbar() {
           </Text>
           <Text>
             <Link to="about" spy={true} smooth={true}>
-              About
+              About Me
             </Link>
           </Text>
           <Text>
