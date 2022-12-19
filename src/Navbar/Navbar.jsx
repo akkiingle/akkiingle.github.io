@@ -27,17 +27,18 @@ export default function Navbar() {
       position="sticky"
       top="0"
       zIndex="5"
+      h="80px"
       borderBottom="1px solid #e0fbfc"
       // border="1px solid red"
     >
-      <Flex justifyContent={"space-between"}>
+      <Flex justifyContent={"space-between"} alignItems="center" border="1px solid" h="100%">
         <Box
           w={{ lg: "30%", md: "40%", sm: "40%", base: "50%" }}
           // color="#f6bd60"
           color="#e0fbfc"
         >
           <Text
-            fontSize={{ lg: "50", md: "50", sm: "35", base: "25" }}
+            fontSize={{ lg: "40", md: "50", sm: "35", base: "25" }}
             fontFamily="Courgette"
           >
             Akshay Ingle
@@ -48,37 +49,40 @@ export default function Navbar() {
           w="60%"
           display={{ base: "none", sm: "none", md: "flex", lg: "flex" }}
           color="#e0fbfc"
-          fontSize="20"
+          fontSize="18"
+          fontWeight="300"
         >
-          <Text>
+          <Text cursor="pointer">
             <Link to="home" spy={true} smooth={true}>
               Home
             </Link>
           </Text>
-          <Text>
+          <Text cursor="pointer">
             <Link to="about" spy={true} smooth={true}>
               About Me
             </Link>
           </Text>
-          <Text>
+          <Text cursor="pointer">
             <Link to="skills" spy={true} smooth={true}>
               Skills
             </Link>
           </Text>
-          <Text>
+          <Text cursor="pointer">
             <Link to="project" spy={true} smooth={true}>
               Project
             </Link>
           </Text>
-          <Text>
+          <Text cursor="pointer">
             <Link to="contact" spy={true} smooth={true}>
               Contact
             </Link>
           </Text>
           <Text>
-            <Link to="resume" spy={true} smooth={true}>
+            < a href="https://drive.google.com/file/d/18DnRfQh35Oaw7auNtvlDXpYCk3E-4JMD/view?usp=share_link" target="blank">
+            
               Resume
-            </Link>
+            
+            </a>
           </Text>
         </HStack>
         <Menu>

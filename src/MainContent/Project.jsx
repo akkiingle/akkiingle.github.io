@@ -62,7 +62,7 @@ const Project = () => {
               <Text
                 textAlign="justify"
                 fontSize={{ base: "11px", sm: "15px", md: "16px" }}
-                borderBottom="1px solid"
+                // borderBottom="1px solid"
                 borderRadius="0 0 5px 5px"
               >
                 PharmEasy is online pharmacy & medical stores offering
@@ -71,7 +71,7 @@ const Project = () => {
               {/* <Divider></Divider> */}
               <Text
                 textAlign="left"
-                borderBottom="1px solid"
+                // borderBottom="1px solid"
                 borderRadius="0 0 5px 5px"
                 fontSize={{ base: "11px", sm: "15px", md: "16px" }}
               >
@@ -82,7 +82,7 @@ const Project = () => {
               <Text
                 textAlign="left"
                 m="auto"
-                borderBottom="1px solid"
+                // borderBottom="1px solid"
                 borderRadius="0 0 5px 5px"
                 fontSize={{ base: "11px", sm: "15px", md: "16px" }}
               >
@@ -142,7 +142,7 @@ const Project = () => {
               </Text>
               <Text
                 fontSize={{ base: "11px", sm: "15px", md: "16px" }}
-                borderBottom="1px solid"
+                // borderBottom="1px solid"
                 borderRadius="0 0 5px 5px"
               >
                 Zappos.com is an online shoe and clothing retailer based
@@ -150,7 +150,7 @@ const Project = () => {
               </Text>
               <Text
                 textAlign="left"
-                borderBottom="1px solid"
+                // borderBottom="1px solid"
                 borderRadius="0 0 5px 5px"
                 fontSize={{ base: "11px", sm: "15px", md: "16px" }}
               >
@@ -160,7 +160,7 @@ const Project = () => {
               </Text>
               <Text
                 textAlign="left"
-                borderBottom="1px solid"
+                // borderBottom="1px solid"
                 borderRadius="0 0 5px 5px"
                 m="auto"
                 fontSize={{ base: "11px", sm: "15px", md: "16px" }}
@@ -217,12 +217,12 @@ const Project = () => {
                 fontSize="20px"
                 lineHeight="40px"
               >
-                PharmEasy.com
+                Semrush.com
               </Text>
               <Text
                 textAlign="justify"
                 fontSize={{ base: "11px", sm: "15px", md: "16px" }}
-                borderBottom="1px solid"
+                // borderBottom="1px solid"
                 borderRadius="0 0 5px 5px"
               >
                 Semrush is an all-in-one tool suite for improving online
@@ -230,7 +230,7 @@ const Project = () => {
               </Text>
               <Text
                 textAlign="left"
-                borderBottom="1px solid"
+                // borderBottom="1px solid"
                 borderRadius="0 0 5px 5px"
                 fontSize={{ base: "11px", sm: "15px", md: "16px" }}
               >
@@ -240,7 +240,7 @@ const Project = () => {
               <Text
                 textAlign="left"
                 m="auto"
-                borderBottom="1px solid"
+                // borderBottom="1px solid"
                 borderRadius="0 0 5px 5px"
                 fontSize={{ base: "11px", sm: "15px", md: "16px" }}
               >

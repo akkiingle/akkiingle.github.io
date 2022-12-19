@@ -25,7 +25,7 @@ const Contact = () => {
       </Text>
 
       <Grid
-        border="1px solid"
+        // border="1px solid"
         templateColumns="repeat(1,1fr)" 
         /*templateColumns="repeat(1,1fr)"templateColumns="repeat(1,1fr)" */
         mt="30px"
