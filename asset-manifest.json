@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/static/css/main.01624bef.css",
-    "main.js": "/static/js/main.baea78aa.js",
+    "main.js": "/static/js/main.7d8f0983.js",
     "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
     "static/media/UserImage.jpg": "/static/media/UserImage.ee5194f22b870034eb4c.jpg",
     "static/media/Zappos.png": "/static/media/Zappos.1407927a54a03d06001e.png",
-    "static/media/UserImage2.JPG": "/static/media/UserImage2.d027951105df5c009eb4.JPG",
     "static/media/PharmEasy.png": "/static/media/PharmEasy.5a4ea974c3975f031dca.png",
+    "static/media/PWS.png": "/static/media/PWS.720ace73560af136a7cb.png",
     "static/media/Semrush.png": "/static/media/Semrush.c1e63d33652dcc6d2ef3.png",
     "static/media/nodejs.svg": "/static/media/nodejs.52cbf9a89f44655c0375b9e9f88bf9c5.svg",
     "static/media/express.svg": "/static/media/express.ec3fa071e664f8b77ebf8b910ff944e0.svg",
@@ -29,11 +29,11 @@
     "static/media/vsCode.svg": "/static/media/vsCode.51f0d491a3e12792d2e8e2649c1ac371.svg",
     "static/media/chakraUI.svg": "/static/media/chakraUI.cf914ef86bb989cd35f1f4e4235fba6c.svg",
     "main.01624bef.css.map": "/static/css/main.01624bef.css.map",
-    "main.baea78aa.js.map": "/static/js/main.baea78aa.js.map",
+    "main.7d8f0983.js.map": "/static/js/main.7d8f0983.js.map",
     "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.01624bef.css",
-    "static/js/main.baea78aa.js"
+    "static/js/main.7d8f0983.js"
   ]
 }
