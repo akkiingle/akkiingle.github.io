@@ -1,8 +1,6 @@
 import { Box, Grid, Image, Text } from "@chakra-ui/react";
 import React from "react";
-import Navbar from "../Navbar/Navbar";
 import UserImage from "../Image/UserImage.jpg";
-import UserImage2 from "../Image/UserImage2.JPG";
 import Type from "../type";
 
 const Home = () => {
@@ -52,8 +50,8 @@ const Home = () => {
           <Text fontFamily="Merienda" fontSize="40">
             <Type />
           </Text>
-          <a href="https://drive.google.com/file/d/18DnRfQh35Oaw7auNtvlDXpYCk3E-4JMD/view?usp=share_link" target="blank">
-            <button class="button-72" role="button">
+          <a href="https://drive.google.com/u/0/uc?id=18DnRfQh35Oaw7auNtvlDXpYCk3E-4JMD&export=download" target="blank">
+            <button class="button-72" >
               Resume
             </button>
           </a>

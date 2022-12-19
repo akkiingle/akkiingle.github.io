@@ -78,10 +78,8 @@ export default function Navbar() {
             </Link>
           </Text>
           <Text>
-            < a href="https://drive.google.com/file/d/18DnRfQh35Oaw7auNtvlDXpYCk3E-4JMD/view?usp=share_link" target="blank">
-            
+            < a href="https://drive.google.com/u/0/uc?id=18DnRfQh35Oaw7auNtvlDXpYCk3E-4JMD&export=download" download target="blank">
               Resume
-            
             </a>
           </Text>
         </HStack>

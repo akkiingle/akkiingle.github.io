@@ -3,7 +3,7 @@ import React from "react";
 import "./Contact.css";
 import { skillsImage } from "./Skills/skillsImage";
 
-const style = {};
+
 
 const Contact = () => {
   return (
@@ -37,7 +37,7 @@ const Contact = () => {
           w={{base:"",md:"60%",lg:"40%"}}
           // border="1px solid"
         >
-          <button class="button-33" role="button">
+          <button class="button-33">
             <Flex gap="5" justifyContent="flex-start" 
               pl={{base:"0",md:"20%"}}
             >
@@ -53,7 +53,7 @@ const Contact = () => {
               <Text mt="1">+918329648285 / +919096989832</Text>
             </Flex>
           </button>
-          <button class="button-33" role="button">
+          <button class="button-33" >
             <Flex gap="5" justifyContent="flex-start" 
             pl={{base:"0",md:"20%"}}
             >
@@ -70,7 +70,7 @@ const Contact = () => {
             </Flex>
           </button>
           <a href="https://www.linkedin.com/in/akshay-ingle/" target="blank">
-          <button class="button-33" role="button">
+          <button class="button-33" >
             <Flex gap="5" justifyContent="flex-start"  pl={{base:"0",md:"20%"}}>
               <Image
                 src={skillsImage("linkedin")}
@@ -85,7 +85,7 @@ const Contact = () => {
           </button>
           </a>
           <a href="https://github.com/akkiingle" target="blank">
-          <button class="button-33" role="button">
+          <button class="button-33" >
             <Flex gap="5" justifyContent="flex-start"  pl={{base:"0",md:"20%"}}>
               <Image
                 src={skillsImage("github")}
