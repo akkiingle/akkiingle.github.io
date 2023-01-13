@@ -221,7 +221,8 @@ const Project = () => {
               </Text>
               <HStack justifyContent="space-around" mt="10px">
                 <a
-                  href="https://flourishing-salmiakki-eeb8bb.netlify.app/"
+                  // href="https://flourishing-salmiakki-eeb8bb.netlify.app/"
+                  href="https://pharmeasyclone22.netlify.app/"
                   target="blank"
                 >
                   <button class="button-89">Deploy</button>

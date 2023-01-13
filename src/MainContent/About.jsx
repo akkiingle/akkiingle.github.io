@@ -42,7 +42,7 @@ const About = () => {
         </Text>
       </Box>
       <Box>
-        <Image src="https://abhishekdewanganportfolio.netlify.app/static/media/blueTheme-boy.b2f186cb.svg"
+        <Image src="https://abhishekdewanganportfolio.netlify.app/static/media/blueTheme-boy.766e140d.svg"
           h={{base:"200px",md:"400px"}} margin="auto"></Image>
       </Box>
     </Grid>

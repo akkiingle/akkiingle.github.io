@@ -10,7 +10,7 @@ const Stats = () => {
         <a href="https://github.com/akkiingle">
           <img
             align="left"
-            src="https://github-readme-streak-stats.herokuapp.com/?user=akkiingle"
+            src="https://github-readme-streak-stats.herokuapp.com/?user=akkiingle" alt="streak"
           />
         </a>
       </div>
@@ -28,13 +28,14 @@ const Stats = () => {
         <a href="https://github.com/akkiingle">
           <img
             align="center"
-            src="https://github-readme-stats.vercel.app/api/top-langs/?username=akkiingle" //launguages
+            // src="https://github-readme-stats.vercel.app/api/top-langs/?username=akkiingle" //launguages
+            src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=akkiingle"  alt="top lang"//launguages
           />
         </a>
         <a href="https://github.com/akkiingle">
           <img 
             align="left"
-            src="https://github-readme-stats.vercel.app/api?username=akkiingle&count_private=true&show_icons=true" //stats
+            src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=akkiingle&count_private=true&show_icons=true" alt="stats" //stats
           />
         </a>
       </Flex>

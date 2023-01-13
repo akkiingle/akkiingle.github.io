@@ -1,6 +1,6 @@
 import { Box, Grid, Image, Text } from "@chakra-ui/react";
 import React from "react";
-import UserImage from "../Image/UserImage.jpg";
+import UserImage from "../Image/UserImage1.png";
 import Type from "../type";
 
 const Home = () => {
@@ -18,21 +18,33 @@ const Home = () => {
         pt="50px"
         paddingBottom="10px"
         rowGap="20px"
+        // border="1px solid red"
       >
-        <Box h="400px" pos="relative">
-          <Image
-            src={UserImage}
-            maxHeight="100%"
-            maxWidth="100%"
+        <Box h="400px" pos="relative" >
+          <Box
+            h={{base:"60%",sm:"",md:"",lg:"100%"}}
+            // border="1px solid red"
+            w="-webkit-fit-content"
+            m="auto"
             borderRadius="50%"
-            // borderRadius="40% 20% 40% 20%"
-            margin="auto"
-            backgroundColor="transparent"
-            borderRight="10px solid "
-            // borderLeft="10px solid #f6bd60"
-            // boxShadow=" 0px 10px 20px rgba(0, 0, 0, 0.12)"
+            overflow="hidden"
             boxShadow="rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px"
-          ></Image>
+            // bg="rgb(255,255,255)"
+          >
+            <Image
+              src={UserImage}
+              maxHeight="125%"
+              maxWidth="100%"
+              // borderRadius="50%"
+              // borderRadius="40% 20% 40% 20%"
+              margin="auto"
+              backgroundColor="transparent"
+              // mt="5px"
+              // borderRight="10px solid "
+              // borderLeft="10px solid #f6bd60"
+              // boxShadow=" 0px 10px 20px rgba(0, 0, 0, 0.12)"
+            ></Image>
+          </Box>
         </Box>
         <Box
           display="flex"
@@ -50,10 +62,12 @@ const Home = () => {
           <Text fontFamily="Merienda" fontSize="40">
             <Type />
           </Text>
-          <a href="https://drive.google.com/u/0/uc?id=18DnRfQh35Oaw7auNtvlDXpYCk3E-4JMD&export=download" target="blank">
-            <button class="button-72" >
-              Resume
-            </button>
+          <a
+            href="https://drive.google.com/u/0/uc?id=18DnRfQh35Oaw7auNtvlDXpYCk3E-4JMD&export=download"
+            target="blank"
+            style={{marginTop:"20px"}}
+          >
+            <button class="button-72" style={{textAlign:"center",margin:"auto",marginTop:"20px"}}>Resume</button>
           </a>
         </Box>
       </Grid>
